@@ -2,9 +2,9 @@ name: CMake
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches:
+      - master
+      - feature/github_actions
 
 jobs:
   build:
