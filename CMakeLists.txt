@@ -3,16 +3,13 @@ cmake_minimum_required (VERSION 3.25)
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
 set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 
-project (ip_filter VERSION ${PROJECT_VESRSION})
-
-#configure_file(version.h.in version.h)
-
+project (ip_filter VERSION ${PROJECT_VERSION})
 add_executable (ip_filter main.cpp)
 
 set_target_properties(
-	ip_filter PROPERTIES
-	CXX_STANDARD 20
-	CXX_STANDARD_REQUIRED ON
+		ip_filter PROPERTIES
+		CXX_STANDARD 20
+		CXX_STANDARD_REQUIRED ON
 )
 
 install(TARGETS ip_filter RUNTIME DESTINATION bin)
