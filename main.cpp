@@ -24,7 +24,7 @@ int typereplacement(std::string data)
 	return intData;
 }
 
-//function output of the result
+//function output of the343434 result
 void outRes(int i)
 {
 	std::cout << ipAdress[i][0] << "." << ipAdress[i][1] << "." 
